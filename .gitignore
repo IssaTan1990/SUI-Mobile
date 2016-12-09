@@ -7,3 +7,8 @@ dist/
 .DS_Store
 _site/*
 *.orig
+.idea/deployment.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/modules.xml
+.idea/SUI-Mobile.iml
