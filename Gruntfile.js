@@ -88,7 +88,6 @@ module.exports = function(grunt) {
                     banner: '<%= banner %>'
                 },
                 src: [
-                    'js/city-data.js',
                     'js/city-picker.js'
                 ],
                 dest: '<%= meta.distPath %>js/<%= pkg.name %>-city-picker.js'

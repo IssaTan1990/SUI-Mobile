@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+  <link rel="stylesheet" href="../dist/css/sm.min.css">
+
+  <title>City Demo2</title>
+</head>
+<body>
+<div class="page-group">
+  <div class="page" id="page-1">
+    <div class="content">
+      <div class="content-block">
+        <input type="text" id="city-picker" value="" data-value="" />
+      </div>
+    </div>
+  </div>
+</div>
+<script src="//lib.wuedc.com/cdn/zepto/1.2.0/zepto.min.js"></script>
+<script src="../dist/js/sm.min.js"></script>
+<!--<script src="../js/city-data.js"></script>-->
+<script src="../js/city-picker.js"></script>
+<!--<script src="../dist/js/sm-city-picker.min.js"></script>-->
+<script>
+  $("#city-picker").cityPicker({
+    toolbarTemplate: '<header class="bar bar-nav">\
+    <button class="button button-link pull-right close-picker">确定</button>\
+    <h1 class="title">选择收货地址</h1>\
+    </header>',
+    onClose: function () {
+      console.log('value', '===>', $("#city-picker").val())
+    }
+  });
+</script>
+</body>
+</html>
