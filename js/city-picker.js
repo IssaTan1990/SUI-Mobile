@@ -20,19 +20,19 @@
   };
 
   var getChildren = function (data) {
-    if (data.children.length === 0) return [ { code: "", name: "", children: [] } ];
+    if (!data.children || data.children.length === 0) return [ { code: "", name: "", children: [] } ];
     return data.children;
   };
 
   var getChildrenName = function (data) {
-    if (data.children.length === 0) return [ { code: "", name: "", children: [] } ];
+    if (!data.children || data.children.length === 0) return [ { code: "", name: "", children: [] } ];
     return data.children.map(function (d) {
       return d.name
     });
   };
 
   var getChildrenCode = function (data) {
-    if (data.children.length === 0) return [ { code: "", name: "", children: [] } ];
+    if (!data.children || data.children.length === 0) return [ { code: "", name: "", children: [] } ];
     return data.children.map(function (d) {
       return d.code
     });
